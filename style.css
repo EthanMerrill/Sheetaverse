@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+}
+
+.hero {
+  /* Rectangle 1 */
+  position: absolute;
+  width: 80%;
+  min-width: 500px;
+  height: 390px;
+  left: 113px;
+  top: 140px;
+
+  background: rgba(250, 250, 250, 0.39);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px;
+}
+
+.info-bx {
+    /* Rectangle 2 */
+    position: absolute;
+    width: 80%;
+    height: 390px;
+    left: 113px;
+    top: 140px;
+    
+    background: rgba(250, 250, 250, 0.45);
+    backdrop-filter: blur(2px);
+    box-shadow: -6px -6px 16px -5px rgba(172, 172, 172, 0.2), 6px 6px 16px rgba(114, 114, 114, 0.5);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: 20px;
+    border-radius: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.5em;
+  color: rgb(58, 58, 58);
+  margin:3px;
+}
+
+.aurora-outer {
+  background: linear-gradient(
+    45deg,
+    #32a6ff 0%,
+    #3f6fff 49%,
+    #8d54ff 82%
+  );
+  background-size: 200%;
+  animation: aurora 10s infinite;
+}
+
+.aurora-inner {
+  background: radial-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.15)
+  );
+  background-size: 200%;
+  animation: aurora 7s infinite;
+  position: relative;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right top;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+div {
+  display: block;
+  /*     height:1000px; */
+  /*     width: 1080px; */
+  /*     position: relative; */
+  width: 100%;
+  height: 2000px;
+}

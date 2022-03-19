@@ -8,13 +8,9 @@ body {
 
 .hero {
   /* Rectangle 1 */
-  position: absolute;
   width: 80%;
-  min-width: 500px;
+  min-width: 600px;
   height: 30px;
-  left: 113px;
-  top: 140px;
-
   background: rgba(250, 250, 250, 0.39);
   backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
@@ -61,6 +57,13 @@ p {
     flex-direction:column;
 }
 
+.content-box{
+    position:absolute;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
 .glass-button{
     height:55px;
     width: 200px;
@@ -89,7 +92,7 @@ a{
 
 .info-bx {
     /* Rectangle 2 */
-    position: absolute;
+    /* position: absolute; */
     width: 80%;
     max-width: 700px;
     height: 390px;
@@ -100,8 +103,9 @@ a{
     backdrop-filter: blur(2px);
     box-shadow: -6px -6px 16px -5px rgba(172, 172, 172, 0.2), 6px 6px 16px rgba(114, 114, 114, 0.5);
     /* Note: backdrop-filter has minimal browser support */
-    padding: 20px;
+    padding: 30px;
     border-radius: 25px;
+    margin: 100px;
 
 }
 
